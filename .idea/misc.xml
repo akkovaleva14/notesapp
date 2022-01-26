@@ -6,6 +6,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="app/src/main/res/layout/fragment_edit_note.xml" value="0.32388484861467204" />
         <entry key="app/src/main/res/layout/fragment_recycler_notes.xml" value="0.20416666666666666" />
+        <entry key="app/src/main/res/layout/item_list.xml" value="0.16041666666666668" />
       </map>
     </option>
   </component>
@@ -53,7 +54,7 @@
       </value>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

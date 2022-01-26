@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edit_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gray">
 
     <ImageButton
-        android:id="@+id/arrowbutton"
+        android:id="@+id/buttonArrow"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
@@ -21,7 +20,7 @@
         app:srcCompat="@drawable/arrowbutton" />
 
     <ImageButton
-        android:id="@+id/savebutton"
+        android:id="@+id/buttonSave"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
@@ -37,16 +36,16 @@
         android:id="@+id/title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:hint="@string/title"
         android:inputType="text"
         android:maxLines="1"
-        android:hint="@string/title"
         android:textAlignment="viewStart"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/savebutton"
-        app:layout_constraintStart_toEndOf="@+id/arrowbutton"
-        app:layout_constraintTop_toBottomOf="@+id/arrowbutton" />
+        app:layout_constraintEnd_toStartOf="@+id/buttonSave"
+        app:layout_constraintStart_toEndOf="@+id/buttonArrow"
+        app:layout_constraintTop_toBottomOf="@+id/buttonArrow" />
 
     <EditText
         android:id="@+id/note"
@@ -60,8 +59,7 @@
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-         />
+        app:layout_constraintTop_toBottomOf="@+id/title" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

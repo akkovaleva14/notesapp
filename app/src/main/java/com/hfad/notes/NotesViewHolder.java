@@ -16,29 +16,16 @@ public class NotesViewHolder extends RecyclerView.ViewHolder {
     задавать какие-либо свойства в процессе работы пользователя со списком */
     TextView title;
     TextView note;
-    ImageView imageHolder;
 
     // создали конструктор, который принимает на вход View-компонент строкИ и ищет все дочерние компоненты
     public NotesViewHolder(View itemView) {
         super(itemView);
         title = itemView.findViewById(R.id.title);
         note = itemView.findViewById(R.id.textContent);
-        imageHolder = itemView.findViewById(R.id.pictureContent);
     }
 
     public void bind(Notes notes) {
         title.setText(notes.getTitle());
         note.setText(notes.getNote());
-
-        // dependency, implemented in build.gradle(Module)
-        Glide
-                .with(itemView.getContext())
-                .load(R.drawable.bird)
-                //   .load(R.drawable.dorian)
-                .error(R.drawable.arrowbutton)
-                .into(imageHolder);
-
-        // VISIBLE / GONE - int constant
-        imageHolder.setVisibility(notes.getImage() != null ? View.VISIBLE : View.GONE);
     }
 }
